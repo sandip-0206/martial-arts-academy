@@ -11,8 +11,8 @@ export const NavbarMenu = [
   },
   {
     id: 2,
-    title: "Trainer",
-    link: "#trainer",
+    title: "Testimonials",
+    link: "#testimonials",
   },
   {
     id: 3,

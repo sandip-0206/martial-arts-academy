@@ -9,7 +9,7 @@ const Banner2 = () => {
         {/* brand info */}
         <div className="flex flex-col justify-center text-center space-y-8 lg:px-44">
           <motion.h1
-            variants={SlideLeft(0.5)}
+            variants={SlideLeft(0.4)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}
@@ -18,7 +18,7 @@ const Banner2 = () => {
             Get 20% Discount On Your First Order, Are You Ready To Buy
           </motion.h1>
           <motion.p
-            variants={SlideLeft(0.7)}
+            variants={SlideLeft(0.2)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}
@@ -28,7 +28,7 @@ const Banner2 = () => {
             for your workout
           </motion.p>
           <motion.div
-            variants={SlideLeft(0.9)}
+            variants={SlideLeft(0.4)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}

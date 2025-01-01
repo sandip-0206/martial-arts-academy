@@ -41,6 +41,12 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <a
+                href="#contact"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold p-2 rounded-lg"
+              >
+                Contact Us
+              </a>
             </ul>
           </div>
           {/* Icons section */}

@@ -46,20 +46,20 @@ const cardVariants = (delay = 0) => ({
     transition: {
       type: "spring",
       stiffness: 120,
-      damping: 25,
+      damping: 20,
       delay, // Add a delay for staggered animation
     },
   },
 });
 
 const textVariants = {
-  hidden: { opacity: 0, x: 30 },
+  hidden: { opacity: 0, x: 50 },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      type: "easeOut",
-      duration: 0.8,
+      type: "easeIn",
+      duration: 0.2,
     },
   },
 };
@@ -89,7 +89,7 @@ const Pricing = () => (
           Choose the plan that suits your training needs best.
         </motion.p>
         {/* Animate Cards */}
-        <div className="mt-10 grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+        <div className="mt-10 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
@@ -108,7 +108,7 @@ const Pricing = () => (
                   / {plan.duration}
                 </span>
               </p>
-              <button className="mt-6 w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">
+              <button className="mt-6 w-full py-2 px-4 primary-btn font-semibold rounded-md transition">
                 Join Now
               </button>
               <ul className="mt-4 space-y-2">

@@ -76,6 +76,7 @@ const Testimonials = () => (
     whileInView="visible"
     viewport={{ once: true }}
     className="container mx-auto px-4"
+    id="testimonials"
   >
     <section className="py-12">
       {/* Heading animation */}

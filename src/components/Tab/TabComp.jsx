@@ -19,9 +19,9 @@ const TabComp = () => {
 
   return (
     <>
-      <div className="container my-12 md:my-16">
+      <div id="program" className="container my-12 md:my-16">
         {/* Tabs button section */}
-        <div className="mb-4 p-6">
+        <div className="mb-4">
           {tabs.map((tab) => (
             <button
               key={tab}
