@@ -66,7 +66,7 @@ const textVariants = {
 
 const Pricing = () => (
   <div id="pricing" className="container">
-    <div className="py-12 bg-gray-100 dark:bg-gray-800">
+    <div className="py-12 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Animate Heading */}
         <motion.h2
@@ -74,7 +74,7 @@ const Pricing = () => (
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center text-2xl lg:text-4xl font-bold text-gray-800 dark:text-white"
+          className="text-center text-2xl lg:text-4xl font-bold text-gray-800 "
         >
           Our Pricing Plans
         </motion.h2>
@@ -84,7 +84,7 @@ const Pricing = () => (
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-4 text-center text-gray-600 dark:text-gray-300"
+          className="mt-4 text-center text-gray-600"
         >
           Choose the plan that suits your training needs best.
         </motion.p>
@@ -97,14 +97,14 @@ const Pricing = () => (
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% in view
-              className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 hover:shadow-lg transition duration-300"
+              className="bg-white  shadow-md rounded-lg p-6 hover:shadow-lg transition duration-300"
             >
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-800 ">
                 {plan.title}
               </h3>
-              <p className="mt-2 text-4xl font-bold text-gray-800 dark:text-white">
+              <p className="mt-2 text-4xl font-bold text-gray-800 ">
                 {plan.price}
-                <span className="text-lg font-medium text-gray-600 dark:text-gray-300">
+                <span className="text-lg font-medium text-gray-600">
                   / {plan.duration}
                 </span>
               </p>
@@ -113,12 +113,9 @@ const Pricing = () => (
               </button>
               <ul className="mt-4 space-y-2">
                 {plan.features.map((feature, idx) => (
-                  <li
-                    key={idx}
-                    className="text-gray-600 dark:text-gray-300 flex items-center"
-                  >
+                  <li key={idx} className="text-gray-600 flex items-center">
                     <span className="mr-2">
-                      <FaCheck className="text-green-500 dark:text-green-400" />
+                      <FaCheck className="text-green-500" />
                     </span>
                     {feature}
                   </li>

@@ -74,13 +74,13 @@ const Equipments = () => (
   >
     <motion.h2
       variants={containerVariants}
-      className="text-2xl lg:text-4xl font-bold text-center text-gray-800 dark:text-white"
+      className="text-2xl lg:text-4xl font-bold text-center text-gray-800"
     >
       What We Offer You
     </motion.h2>
     <motion.p
       variants={containerVariants}
-      className="mt-4 text-center text-gray-600 dark:text-gray-300"
+      className="mt-4 text-center text-gray-600"
     >
       Discover the benefits of joining our Karate club and how we can help you
       achieve your goals.
@@ -97,15 +97,13 @@ const Equipments = () => (
           viewport={{ once: true }}
           key={index}
           // variants={cardVariants}
-          className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 text-center hover:shadow-lg transition duration-300"
+          className="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition duration-300"
         >
           <div className="flex justify-center mb-4">{offering.icon}</div>
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+          <h3 className="text-lg font-semibold text-gray-800">
             {offering.title}
           </h3>
-          <p className="mt-2 text-gray-600 dark:text-gray-300">
-            {offering.description}
-          </p>
+          <p className="mt-2 text-gray-600">{offering.description}</p>
         </motion.div>
       ))}
     </motion.div>

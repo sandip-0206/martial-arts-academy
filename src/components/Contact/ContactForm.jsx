@@ -22,10 +22,10 @@ const ContactForm = () => {
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-gray-800 dark:text-white">
+        <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-gray-800">
           Contact Us
         </h2>
-        <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700 dark:text-gray-300">
+        <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
           Have questions or want to visit us? Reach out by filling out the form
           below or check our location on the map.
         </p>
@@ -34,76 +34,66 @@ const ContactForm = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-2/3 p-8 bg-white dark:bg-gray-800 shadow-xl rounded-lg"
+          className="w-full lg:w-2/3 p-8 bg-white shadow-xl rounded-lg"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
-              <label className="block text-gray-600 dark:text-gray-300 mb-2">
-                Full Name
-              </label>
+              <label className="block text-gray-600 mb-2">Full Name</label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border rounded-lg focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+                className="w-full p-3 border rounded-lg focus:outline-none"
                 placeholder="Enter your full name"
               />
             </div>
             <div>
-              <label className="block text-gray-600 dark:text-gray-300 mb-2">
-                Email Address
-              </label>
+              <label className="block text-gray-600 mb-2">Email Address</label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border rounded-lg focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+                className="w-full p-3 border rounded-lg focus:outline-none"
                 placeholder="Enter your email"
               />
             </div>
           </div>
           <div className="mb-6">
-            <label className="block text-gray-600 dark:text-gray-300 mb-2">
-              Phone Number
-            </label>
+            <label className="block text-gray-600 mb-2">Phone Number</label>
             <input
               type="text"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+              className="w-full p-3 border rounded-lg focus:outline-none"
               placeholder="Enter your phone number"
             />
           </div>
           <div className="mb-6">
-            <label className="block text-gray-600 dark:text-gray-300 mb-2">
-              Subject
-            </label>
+            <label className="block text-gray-600 mb-2">Subject</label>
             <input
               type="text"
               name="subject"
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full p-3 border rounded-lg focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+              className="w-full p-3 border rounded-lg focus:outline-none"
               placeholder="Enter the subject"
             />
           </div>
           <div className="mb-6">
-            <label className="block text-gray-600 dark:text-gray-300 mb-2">
-              Message
-            </label>
+            <label className="block text-gray-600 mb-2">Message</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
               rows="4"
               required
-              className="w-full p-3 border rounded-lg focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+              className="w-full p-3 border rounded-lg focus:outline-none"
               placeholder="Write your message here..."
             ></textarea>
           </div>
@@ -116,11 +106,9 @@ const ContactForm = () => {
         </form>
 
         {/* Map Section */}
-        <div className="w-full lg:w-1/2 p-4 bg-white dark:bg-gray-800 shadow-xl rounded-lg">
-          <h3 className="text-2xl lg:text-4xl font-bold mb-4 dark:text-white">
-            Find Us Here
-          </h3>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
+        <div className="w-full lg:w-1/2 p-4 bg-white shadow-xl rounded-lg">
+          <h3 className="text-2xl lg:text-4xl font-bold mb-4">Find Us Here</h3>
+          <p className="text-gray-700 mb-4">
             JK Martial Arts Academy <br />
             Antophill, Wadala, Mumbai, 400037, India
           </p>
